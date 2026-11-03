@@ -208,9 +208,9 @@ This repository is an npm-workspaces monorepo. Deploy the API and frontend as se
 
    | Key | Value |
    |---|---|
-   | `VITE_API_URL` | `https://<your-render-service>.onrender.com/api` |
+   | `VITE_API_URL` | `https://nirmal-kumar-1.onrender.com/api` |
 
-   Use the real Render service hostname, not a placeholder, and include `/api`. This variable is embedded into the frontend at build time, so redeploy after changing it.
+   The production frontend defaults to `https://nirmal-kumar-1.onrender.com/api`; setting this Vercel variable explicitly is recommended. Use the API URL including `/api`. This variable is embedded into the frontend at build time, so redeploy after changing it.
 3. Deploy. Open the Vercel URL and confirm the login page loads. The React Router fallback is configured so direct links and page refreshes resolve to the app.
 
 ### 4. Set cookie-compatible production domains
