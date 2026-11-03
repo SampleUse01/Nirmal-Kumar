@@ -181,7 +181,7 @@ This repository is an npm-workspaces monorepo. Deploy the API and frontend as se
    | Runtime | Node |
    | Node Version | 22.x (22.12 or newer) |
    | Build Command | `npm ci && npm run build -w @wms/api` |
-   | Start Command | `npm run start -w @wms/api` |
+   | Start Command | `npm run start -w @wms/api` (or `yarn start` after the root `start` script is deployed) |
    | Health Check Path | `/api/health` |
 
 3. Add these environment variables in Render's service settings. `PORT` is supplied by Render; do not hardcode it.
