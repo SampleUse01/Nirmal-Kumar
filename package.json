@@ -1,0 +1,16 @@
+{
+  "name": "enterprise-workforce-management",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @wms/api\" \"npm run dev -w @wms/web\"",
+    "build": "npm run build -w @wms/api && npm run build -w @wms/web",
+    "test": "npm run test -w @wms/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
